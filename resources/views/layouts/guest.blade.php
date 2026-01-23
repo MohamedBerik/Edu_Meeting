@@ -69,7 +69,7 @@
                                         </form>
                                     </li>
                                 @else
-                                    <li>
+                                    <li style="margin-top: -8px">
                                         <a class="btn btn-success" href="{{ route('login') }}">Log in</a>
                                     </li>
                                     @if (Route::has('register'))
