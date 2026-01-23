@@ -55,13 +55,19 @@
                                 <li>
                                     <form method="POST" action="{{ route('logout') }}">
                                         @csrf
-                                        <button type="submit" class="btn btn-outline-light">Logout</button>
+                                        <button type="submit" class="btn btn-outline-light">
+                                            Logout
+                                        </button>
                                     </form>
                                 </li>
                             @else
-                                <li><a href="{{ route('login') }}">Log in</a></li>
+                                <li>
+                                    <a href="{{ route('login') }}">Log in</a>
+                                </li>
                                 @if (Route::has('register'))
-                                    <li><a href="{{ route('register') }}">Register</a></li>
+                                    <li>
+                                        <a href="{{ route('register') }}">Register</a>
+                                    </li>
                                 @endif
                             @endauth
                             @endif
