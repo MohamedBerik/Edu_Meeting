@@ -22,10 +22,10 @@
 
 
     <!-- Additional CSS Files -->
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ asset('css/templatemo-edu-meeting.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/lightbox.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/lightbox.css') }}">
 
 </head>
 
