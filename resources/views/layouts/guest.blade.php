@@ -31,7 +31,7 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="/" class="logo">
+                        <a href="{{ route('welcome') }}" class="logo">
                             Edu Meeting
                         </a>
                         <!-- ***** Logo End ***** -->
@@ -49,30 +49,28 @@
                             </li>
                             <li class="scroll-to-section"><a href="#courses">Courses</a></li>
                             <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
-                            <li style="margin-top: -30px;">
-                                @if (Route::has('login'))
-                                    @auth
-                                <li>
-                                    <form method="POST" action="{{ route('logout') }}">
-                                        @csrf
-                                        <button type="submit" class="btn btn-outline-light">
-                                            Logout
-                                        </button>
-                                    </form>
-                                </li>
-                            @else
-                                <li>
-                                    <a href="{{ route('login') }}">Log in</a>
-                                </li>
-                                @if (Route::has('register'))
-                                    <li>
-                                        <a href="{{ route('register') }}">Register</a>
+                            @if (Route::has('login'))
+                                @auth
+                                    <li style="margin-top: -10px;">
+                                        <form method="POST" action="{{ route('logout') }}">
+                                            @csrf
+                                            <button type="submit" class="btn btn-outline-light">
+                                                Logout
+                                            </button>
+                                        </form>
                                     </li>
-                                @endif
-                            @endauth
+                                @else
+                                    <li>
+                                        <a href="{{ route('login') }}">Log in</a>
+                                    </li>
+                                    @if (Route::has('register'))
+                                        <li>
+                                            <a href="{{ route('register') }}">Register</a>
+                                        </li>
+                                    @endif
+                                @endauth
                             @endif
 
-                            </li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
