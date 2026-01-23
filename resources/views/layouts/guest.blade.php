@@ -12,14 +12,14 @@
     <title>Education Meeting HTML5 Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href={{ asset('vendor/bootstrap/css/bootstrap.min.css') }} rel="stylesheet">
+    <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href={{ asset('assets/css/fontawesome.css') }}>
-    <link rel="stylesheet" href={{ asset('assets/css/templatemo-edu-meeting.css') }}>
-    <link rel="stylesheet" href={{ asset('assets/css/owl.css') }}>
-    <link rel="stylesheet" href={{ asset('assets/css/lightbox.css') }}>
+    <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/templatemo-edu-meeting.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/lightbox.css') }}">
 
 </head>
 
@@ -51,34 +51,30 @@
                             <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
                             <li style="margin-top: -30px;">
                                 @if (Route::has('login'))
-                                    <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                                        @auth
-                                            <form class="mt-1" method="post" action={{ route('logout') }}
-                                                enctype="multipart/form-data">
-                                                @csrf
-                                                <button type="submit" class="btn btn-outline-light">Logout</button>
-                                            </form>
-                                        @else
+                                    @auth
                                 <li>
-                                    <a href="{{ route('login') }}">Log in</a>
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                        <button type="submit" class="btn btn-outline-light">Logout</button>
+                                    </form>
                                 </li>
+                            @else
+                                <li><a href="{{ route('login') }}">Log in</a></li>
                                 @if (Route::has('register'))
-                                    <li>
-                                        <a href="{{ route('register') }}">Register</a>
-                                    </li>
+                                    <li><a href="{{ route('register') }}">Register</a></li>
                                 @endif
                             @endauth
+                            @endif
+
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
                 </div>
-                @endif
-                </li>
-                </ul>
-                <a class='menu-trigger'>
-                    <span>Menu</span>
-                </a>
-                <!-- ***** Menu End ***** -->
-                </nav>
             </div>
-        </div>
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
@@ -95,16 +91,16 @@
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
-    <script src={{ asset('vendor/jquery/jquery.min.js') }}></script>
-    <script src={{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}></script>
+    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
-    <script src={{ asset('assets/js/isotope.min.js') }}></script>
-    <script src={{ asset('assets/js/owl-carousel.js') }}></script>
-    <script src={{ asset('assets/js/lightbox.js') }}></script>
-    <script src={{ asset('assets/js/tabs.js') }}></script>
-    <script src={{ asset('assets/js/video.js') }}></script>
-    <script src={{ asset('assets/js/slick-slider.js') }}></script>
-    <script src={{ asset('assets/js/custom.js') }}></script>
+    <script src="{{ asset('assets/js/isotope.min.js') }}"></script>
+    <script src="{{ asset('assets/js/owl-carousel.js') }}"></script>
+    <script src="{{ asset('assets/js/lightbox.js') }}"></script>
+    <script src="{{ asset('assets/js/tabs.js') }}"></script>
+    <script src="{{ asset('assets/js/video.js') }}"></script>
+    <script src="{{ asset('assets/js/slick-slider.js') }}"></script>
+    <script src="{{ asset('assets/js/custom.js') }}"></script>
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
