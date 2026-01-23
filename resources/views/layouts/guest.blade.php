@@ -63,7 +63,7 @@
                                     <li style="margin-top: -10px;">
                                         <form method="POST" action="{{ route('logout') }}">
                                             @csrf
-                                            <button type="submit" class="btn btn-outline-light">
+                                            <button type="submit" class="btn btn-outline-danger" style="margin-top: 10px;">
                                                 Logout
                                             </button>
                                         </form>
