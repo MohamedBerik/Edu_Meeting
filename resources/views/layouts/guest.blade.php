@@ -69,12 +69,14 @@
                                         </form>
                                     </li>
                                 @else
-                                    <li style="margin-top: -8px">
-                                        <a class="btn btn-success" href="{{ route('login') }}">Log in</a>
+                                    <li style="margin-top: -6px">
+                                        <a class="btn btn-success" href="{{ route('login') }}">Log
+                                            in</a>
                                     </li>
                                     @if (Route::has('register'))
                                         <li>
-                                            <a href="{{ route('register') }}">Register</a>
+                                            <a class="btn btn-success" style="margin-top: -6px"
+                                                href="{{ route('register') }}">Register</a>
                                         </li>
                                     @endif
                                 @endauth
