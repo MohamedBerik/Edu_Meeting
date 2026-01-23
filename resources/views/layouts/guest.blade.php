@@ -70,12 +70,13 @@
                                     </li>
                                 @else
                                     <li style="margin-top: -2px">
-                                        <a class="btn btn-success" href="{{ route('login') }}">Log
+                                        <a class="btn btn-success" style="padding-top: 3px" href="{{ route('login') }}">Log
                                             in</a>
                                     </li>
                                     @if (Route::has('register'))
                                         <li style="margin-top: -2px">
-                                            <a class="btn btn-success" href="{{ route('register') }}">Register</a>
+                                            <a class="btn btn-success" style="padding-top: 3px"
+                                                href="{{ route('register') }}">Register</a>
                                         </li>
                                     @endif
                                 @endauth
