@@ -9,9 +9,9 @@
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> --}}
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Education Meeting HTML5 Template</title>
 
@@ -22,10 +22,13 @@
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{{ asset('css/fontawesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/templatemo-edu-meeting.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/owl.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/lightbox.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/templatemo-edu-meeting.css') }}"> --}}
+    <link rel="stylesheet" href="https://edumeeting-production.up.railway.app/assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="https://edumeeting-production.up.railway.app/assets/css/owl.css">
+    <link rel="stylesheet" href="https://edumeeting-production.up.railway.app/assets/css/lightbox.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/lightbox.css') }}">
 
 </head>
 
