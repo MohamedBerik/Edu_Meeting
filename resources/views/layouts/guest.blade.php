@@ -22,8 +22,10 @@
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/templatemo-edu-meeting.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/templatemo-edu-meeting.css') }}"> --}}
+    <link rel="stylesheet" href="https://edumeeting-production.up.railway.app/assets/css/templatemo-edu-meeting.css">
+
     <link rel="stylesheet" href="{{ asset('assets/css/owl.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/lightbox.css') }}">
 
