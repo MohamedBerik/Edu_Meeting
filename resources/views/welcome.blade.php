@@ -117,6 +117,11 @@
             <div class="row">
                 <div class="col-lg-9 align-self-center">
                     <h2>Let's get in touch</h2>
+                    @if (session('success'))
+                        <div class="alert alert-success text-center" style="margin-bottom:20px;">
+                            {{ session('success') }}
+                        </div>
+                    @endif
                     <form id="contact" action="{{ route('reservations.store') }}" method="POST">
                         @csrf
                         <div class="row">
