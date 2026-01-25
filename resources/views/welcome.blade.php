@@ -117,19 +117,41 @@
             <div class="row">
                 <div class="col-lg-9 align-self-center">
                     <h2>Let's get in touch</h2>
-                    <form id="contact" action="#" method="post">
+                    <form id="contact" action="{{ route('reservations.store') }}" method="POST">
                         @csrf
                         <div class="row">
-                            <div class="col-lg-4"><input name="name" type="text" placeholder="YOUR NAME..." required>
+                            <div class="col-lg-12">
+                                <h2>Let's get in touch</h2>
                             </div>
-                            <div class="col-lg-4"><input name="email" type="email" placeholder="YOUR EMAIL..." required>
+                            <div class="col-lg-4">
+                                <fieldset>
+                                    <input name="name" type="text" id="name" placeholder="YOURNAME...*"
+                                        required="">
+                                </fieldset>
                             </div>
-                            <div class="col-lg-4"><input name="subject" type="text" placeholder="SUBJECT..." required>
+                            <div class="col-lg-4">
+                                <fieldset>
+                                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*"
+                                        placeholder="YOUR EMAIL..." required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-4">
+                                <fieldset>
+                                    <input name="subject" type="text" id="subject" placeholder="SUBJECT...*"
+                                        required="">
+                                </fieldset>
                             </div>
                             <div class="col-lg-12">
-                                <textarea name="message" placeholder="YOUR MESSAGE..." required></textarea>
+                                <fieldset>
+                                    <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..."
+                                        required=""></textarea>
+                                </fieldset>
                             </div>
-                            <div class="col-lg-12"><button type="submit" class="button">SEND MESSAGE NOW</button></div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                                </fieldset>
+                            </div>
                         </div>
                     </form>
                 </div>
