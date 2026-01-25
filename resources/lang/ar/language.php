@@ -1,4 +1,5 @@
 <?php
+
 return [
     "Dashboard" => "لوحة التحكم",
     "Language" => "اللغة",

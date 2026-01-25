@@ -3,6 +3,7 @@
 @section('content')
     <div class="container-fluid">
         <!-- Statistics Cards -->
+        {{ __('Language.Reservations') }}
 
         <div class="row mb-4">
             <!-- Users Card -->

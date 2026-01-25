@@ -1,4 +1,5 @@
 <?php
+
 return [
     "Dashboard" => "Dashboard",
     "Language" => "Language",
