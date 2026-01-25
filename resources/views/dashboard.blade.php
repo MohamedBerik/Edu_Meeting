@@ -3,6 +3,7 @@
 @section('content')
     <div class="container-fluid">
         <!-- Statistics Cards -->
+        {{ app()->getLocale() }}
 
         <div class="row mb-4">
             <!-- Users Card -->
@@ -12,7 +13,7 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                    {{ __('Language.Users') }}
+                                    {{ __('Users') }}
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $users->count() }}</div>
                                 <div class="mt-2">
