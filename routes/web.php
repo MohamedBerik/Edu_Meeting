@@ -37,7 +37,7 @@ Route::group(
 
         Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-        Route::post('/contact-form', [ReservationController::class, 'store'])
+        Route::post('/contact', [ReservationController::class, 'store'])
             ->name('contact.submit');
 
         Route::middleware("CheckAdmin")->group(function () {

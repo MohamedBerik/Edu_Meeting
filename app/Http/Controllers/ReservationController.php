@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Reservation;
 use App\Mail\ReservationConfirmed;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Validation\Validator;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 
 
