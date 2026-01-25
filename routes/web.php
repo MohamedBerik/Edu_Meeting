@@ -37,8 +37,8 @@ Route::group(
 
         Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-        Route::post('/contact', [ReservationController::class, 'store'])
-            ->name('reservations.store');
+        Route::post('/contact-form', [ReservationController::class, 'store'])
+            ->name('contact.submit');
 
         Route::middleware("CheckAdmin")->group(function () {
             Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');

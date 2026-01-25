@@ -17,9 +17,7 @@ class CreateReservationsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('persons');
-            $table->string('date');
-            $table->string('time');
+            $table->string('subject');
             $table->string('message');
             $table->string('status')->default('pending');
             $table->timestamps();

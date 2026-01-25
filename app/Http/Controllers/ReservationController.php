@@ -38,7 +38,6 @@ class ReservationController extends Controller
             'email' => $request->email,
             'subject' => $request->subject,
             'message' => $request->message,
-            'ip_address' => $request->ip(),
             'created_at' => now(),
         ]);
 
