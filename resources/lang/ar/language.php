@@ -31,7 +31,7 @@ return [
     "CreateEmployee" => "انشيء موظف جديد",
     "Salary" => "المرتب",
     "Sales" => "المبيعات",
-    "CreateSale" => "أنشيءمببعات جديدة",
+    "CreateSale" => "أنشيء مببعات جديدة",
     "Employee_id" => "كود الموظف",
     "Revenue" => "الايرادات",
     "Total Sales" => "اجمالي المبيعات",
@@ -53,4 +53,5 @@ return [
     "All Reservations" => "جميع الحجوزات",
     "Action" => "التأكيد",
     "Create Reservation" => "انشيء حجز",
+    "Subject" => "الموضوع"
 ];

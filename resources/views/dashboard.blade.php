@@ -3,7 +3,6 @@
 @section('content')
     <div class="container-fluid">
         <!-- Statistics Cards -->
-
         <div class="row mb-4">
             <!-- Users Card -->
             <div class="col-xl-3 col-md-6 mb-4">

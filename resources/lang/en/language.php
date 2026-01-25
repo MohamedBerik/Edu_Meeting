@@ -53,4 +53,5 @@ return [
     "All Reservations" => "All Reservations",
     "Action" => "Action",
     "Create Reservation" => "Create Reservation",
+    "Subject" => "Subject"
 ];
