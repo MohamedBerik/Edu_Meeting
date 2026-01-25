@@ -37,6 +37,9 @@ Route::group(
 
         Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+        Route::post('/reservations', [ReservationController::class, 'store'])
+            ->name('reservations.store');
+
         Route::middleware("CheckAdmin")->group(function () {
             Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
@@ -116,6 +119,7 @@ Route::group(
                 Route::delete('/delete/{id}', 'delete')->name('delete');
             });
 
+            // Reservations Routes
             Route::get('/reservations', [ReservationController::class, 'index'])
                 ->name('reservations.index');
 

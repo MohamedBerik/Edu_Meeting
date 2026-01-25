@@ -11,12 +11,9 @@ class Reservation extends Model
         "id",
         "name",
         "email",
-        "persons",
-        "date",
-        "time",
+        "subject",
         "message",
         'status'
 
     ];
-
 }

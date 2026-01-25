@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Models\Reservation;
 use App\Mail\ReservationConfirmed;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Validation\Validator;
+use Illuminate\Http\Request;
+
 
 class ReservationController extends Controller
 {
@@ -13,6 +16,33 @@ class ReservationController extends Controller
     {
         $reservations = Reservation::latest()->get();
         return view('reservation.index', ['reservations' => $reservations]);
+    }
+
+    public function store(Request $request)
+    {
+        // التحقق من البيانات
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'subject' => 'required|string|max:255',
+            'message' => 'required|string',
+        ]);
+
+        if ($validator->fails()) {
+            return back()->withErrors($validator)->withInput();
+        }
+
+        // حفظ في قاعدة البيانات
+        Reservation::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'subject' => $request->subject,
+            'message' => $request->message,
+            'ip_address' => $request->ip(),
+            'created_at' => now(),
+        ]);
+
+        return back()->with('success', 'تم إرسال رسالتك بنجاح!');
     }
 
     public function confirm($id)
