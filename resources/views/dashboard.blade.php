@@ -12,12 +12,12 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                    {{ __('Language.Users') }}
+                                    {{ __('Users') }}
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $users->count() }}</div>
                                 <div class="mt-2">
                                     <a href="{{ route('user.create') }}" class="btn btn-sm btn-primary">
-                                        <i class="fas fa-plus"></i> {{ __('Language.CreateUser') }}
+                                        <i class="fas fa-plus"></i> {{ __('CreateUser') }}
                                     </a>
                                 </div>
                             </div>
@@ -36,12 +36,12 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">
-                                    {{ __('Language.Categories') }}
+                                    {{ __('Categories') }}
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $categories->count() }}</div>
                                 <div class="mt-2">
                                     <a href="{{ route('category.create') }}" class="btn btn-sm btn-secondary">
-                                        <i class="fas fa-plus"></i> {{ __('Language.CreateCategory') }}
+                                        <i class="fas fa-plus"></i> {{ __('CreateCategory') }}
                                     </a>
                                 </div>
                             </div>
@@ -60,12 +60,12 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                    {{ __('Language.Products') }}
+                                    {{ __('Products') }}
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $products->count() }}</div>
                                 <div class="mt-2">
                                     <a href="{{ route('product.create') }}" class="btn btn-sm btn-success">
-                                        <i class="fas fa-plus"></i> {{ __('Language.CreateProduct') }}
+                                        <i class="fas fa-plus"></i> {{ __('CreateProduct') }}
                                     </a>
                                 </div>
                             </div>
@@ -84,12 +84,12 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                    {{ __('Language.Customers') }}
+                                    {{ __('Customers') }}
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $customers->count() }}</div>
                                 <div class="mt-2">
                                     <a href="{{ route('customer.create') }}" class="btn btn-sm btn-warning text-white">
-                                        <i class="fas fa-plus"></i> {{ __('Language.CreateCustomer') }}
+                                        <i class="fas fa-plus"></i> {{ __('CreateCustomer') }}
                                     </a>
                                 </div>
                             </div>
@@ -108,12 +108,12 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                    {{ __('Language.Orders') }}
+                                    {{ __('Orders') }}
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $orders->count() }}</div>
                                 <div class="mt-2">
                                     <a href="{{ route('order.create') }}" class="btn btn-sm btn-info text-white">
-                                        <i class="fas fa-plus"></i> {{ __('Language.CreateOrder') }}
+                                        <i class="fas fa-plus"></i> {{ __('CreateOrder') }}
                                     </a>
                                 </div>
                             </div>
@@ -132,12 +132,12 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                    {{ __('Language.Employees') }}
+                                    {{ __('Employees') }}
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $employees->count() }}</div>
                                 <div class="mt-2">
                                     <a href="{{ route('employee.create') }}" class="btn btn-sm btn-danger">
-                                        <i class="fas fa-plus"></i> {{ __('Language.CreateEmployee') }}
+                                        <i class="fas fa-plus"></i> {{ __('CreateEmployee') }}
                                     </a>
                                 </div>
                             </div>
@@ -156,12 +156,12 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
-                                    {{ __('Language.Sales') }}
+                                    {{ __('Sales') }}
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $sales->count() }}</div>
                                 <div class="mt-2">
                                     <a href="{{ route('sale.create') }}" class="btn btn-sm btn-dark">
-                                        <i class="fas fa-plus"></i> {{ __('Language.CreateSale') }}
+                                        <i class="fas fa-plus"></i> {{ __('CreateSale') }}
                                     </a>
                                 </div>
                             </div>
@@ -180,7 +180,7 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                    {{ __('Language.Revenue') }}
+                                    {{ __('Revenue') }}
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">
                                     @php
@@ -190,7 +190,7 @@
                                 </div>
                                 <div class="mt-2">
                                     <span class="text-success">
-                                        <i class="fas fa-chart-line"></i>{{ __('Language.Total Sales') }}
+                                        <i class="fas fa-chart-line"></i>{{ __('Total Sales') }}
                                     </span>
                                 </div>
                             </div>
@@ -209,10 +209,10 @@
                 <div class="card shadow">
                     <div class="card-header py-3 d-flex justify-content-between align-items-center">
                         <h6 class="m-0 font-weight-bold text-primary">
-                            <i class="fas fa-chart-bar me-2"></i> {{ __('Language.Analytics Analysis') }}
+                            <i class="fas fa-chart-bar me-2"></i> {{ __('Analytics Analysis') }}
                         </h6>
                         <button class="btn btn-sm btn-primary" onclick="showCharts()">
-                            <i class="fas fa-expand"></i> {{ __('Language.Show All') }}
+                            <i class="fas fa-expand"></i> {{ __('Show All') }}
                         </button>
                     </div>
                     <div class="card-body">
@@ -248,12 +248,12 @@
                 <div class="card shadow">
                     <div class="card-header py-3 d-flex justify-content-between align-items-center">
                         <h6 class="m-0 font-weight-bold text-primary">
-                            <i class="fas fa-users me-2"></i>{{ __('Language.Users') }}
+                            <i class="fas fa-users me-2"></i>{{ __('Users') }}
                             <span class="badge bg-primary ms-2">{{ $users->count() }}</span>
                         </h6>
                         <div>
                             <a href="{{ route('user.create') }}" class="btn btn-sm btn-primary">
-                                <i class="fas fa-plus"></i> {{ __('Language.New') }}
+                                <i class="fas fa-plus"></i> {{ __('New') }}
                             </a>
                         </div>
                     </div>
@@ -263,11 +263,11 @@
                                 <thead class="bg-light">
                                     <tr>
                                         <th class="text-center">#</th>
-                                        <th class="text-center">{{ __('Language.Name') }}</th>
-                                        <th class="text-center">{{ __('Language.Email') }}</th>
-                                        <th class="text-center">{{ __('Language.Role') }}</th>
-                                        <th class="text-center">{{ __('Language.Status') }}</th>
-                                        <th class="text-center">{{ __('Language.Operation') }}</th>
+                                        <th class="text-center">{{ __('Name') }}</th>
+                                        <th class="text-center">{{ __('Email') }}</th>
+                                        <th class="text-center">{{ __('Role') }}</th>
+                                        <th class="text-center">{{ __('Status') }}</th>
+                                        <th class="text-center">{{ __('Operation') }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -323,7 +323,7 @@
                         @if ($users->count() > 5)
                             <div class="card-footer text-center">
                                 <a href="{{ route('user.index') }}" class="text-primary" onclick="showAllUsers()">
-                                    <i class="fas fa-arrow-down me-1"></i>{{ __('Language.All Users') }}
+                                    <i class="fas fa-arrow-down me-1"></i>{{ __('All Users') }}
                                     ({{ $users->count() }})
                                 </a>
                             </div>
@@ -337,12 +337,12 @@
                 <div class="card shadow">
                     <div class="card-header py-3 d-flex justify-content-between align-items-center">
                         <h6 class="m-0 font-weight-bold text-secondary">
-                            <i class="fas fa-folder me-2"></i>{{ __('Language.Categories') }}
+                            <i class="fas fa-folder me-2"></i>{{ __('Categories') }}
                             <span class="badge bg-secondary ms-2">{{ $categories->count() }}</span>
                         </h6>
                         <div>
                             <a href="{{ route('category.create') }}" class="btn btn-sm btn-secondary">
-                                <i class="fas fa-plus"></i> {{ __('Language.New') }}
+                                <i class="fas fa-plus"></i> {{ __('New') }}
                             </a>
                         </div>
                     </div>
@@ -352,10 +352,10 @@
                                 <thead class="bg-light">
                                     <tr>
                                         <th class="text-center">#</th>
-                                        <th class="text-center">{{ __('Language.Image') }}</th>
-                                        <th class="text-center">{{ __('Language.Title') }}</th>
-                                        <th class="text-center">{{ __('Language.Description') }}</th>
-                                        <th class="text-center">{{ __('Language.Operation') }}</th>
+                                        <th class="text-center">{{ __('Image') }}</th>
+                                        <th class="text-center">{{ __('Title') }}</th>
+                                        <th class="text-center">{{ __('Description') }}</th>
+                                        <th class="text-center">{{ __('Operation') }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -406,7 +406,7 @@
                             <div class="card-footer text-center">
                                 <a href="{{ route('category.index') }}" class="text-secondary"
                                     onclick="showAllCategories()">
-                                    <i class="fas fa-arrow-down me-1"></i>{{ __('Language.All Categories') }}
+                                    <i class="fas fa-arrow-down me-1"></i>{{ __('All Categories') }}
                                     ({{ $categories->count() }})
                                 </a>
                             </div>
@@ -420,12 +420,12 @@
                 <div class="card shadow">
                     <div class="card-header py-3 d-flex justify-content-between align-items-center">
                         <h6 class="m-0 font-weight-bold text-success">
-                            <i class="fas fa-box me-2"></i>{{ __('Language.Products') }}
+                            <i class="fas fa-box me-2"></i>{{ __('Products') }}
                             <span class="badge bg-success ms-2">{{ $products->count() }}</span>
                         </h6>
                         <div>
                             <a href="{{ route('product.create') }}" class="btn btn-sm btn-success">
-                                <i class="fas fa-plus"></i> {{ __('Language.New') }}
+                                <i class="fas fa-plus"></i> {{ __('New') }}
                             </a>
                         </div>
                     </div>
@@ -435,12 +435,12 @@
                                 <thead class="bg-light">
                                     <tr>
                                         <th class="text-center">#</th>
-                                        <th>{{ __('Language.Image') }}</th>
-                                        <th>{{ __('Language.Title') }}</th>
-                                        <th>{{ __('Language.Price') }}</th>
-                                        <th>{{ __('Language.Quantity') }}</th>
-                                        <th>{{ __('Language.Category_id') }}</th>
-                                        <th class="text-center">{{ __('Language.Operation') }}</th>
+                                        <th>{{ __('Image') }}</th>
+                                        <th>{{ __('Title') }}</th>
+                                        <th>{{ __('Price') }}</th>
+                                        <th>{{ __('Quantity') }}</th>
+                                        <th>{{ __('Category_id') }}</th>
+                                        <th class="text-center">{{ __('Operation') }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -501,7 +501,7 @@
                         @if ($products->count() > 5)
                             <div class="card-footer text-center">
                                 <a href="javascript:void(0)" class="text-success" onclick="showAllProducts()">
-                                    <i class="fas fa-arrow-down me-1"></i>{{ __('Language.All Products') }}
+                                    <i class="fas fa-arrow-down me-1"></i>{{ __('All Products') }}
                                     ({{ $products->count() }})
                                 </a>
                             </div>
@@ -515,12 +515,12 @@
                 <div class="card shadow">
                     <div class="card-header py-3 d-flex justify-content-between align-items-center">
                         <h6 class="m-0 font-weight-bold text-warning">
-                            <i class="fas fa-user-friends me-2"></i>{{ __('Language.Customers') }}
+                            <i class="fas fa-user-friends me-2"></i>{{ __('Customers') }}
                             <span class="badge bg-warning ms-2">{{ $customers->count() }}</span>
                         </h6>
                         <div>
                             <a href="{{ route('customer.create') }}" class="btn btn-sm btn-warning text-white">
-                                <i class="fas fa-plus"></i> {{ __('Language.New') }}
+                                <i class="fas fa-plus"></i> {{ __('New') }}
                             </a>
                         </div>
                     </div>
@@ -530,10 +530,10 @@
                                 <thead class="bg-light">
                                     <tr>
                                         <th>#</th>
-                                        <th>{{ __('Language.Name') }}</th>
-                                        <th>{{ __('Language.Email') }}</th>
-                                        <th>{{ __('Language.Status') }}</th>
-                                        <th class="text-center">{{ __('Language.Operation') }}</th>
+                                        <th>{{ __('Name') }}</th>
+                                        <th>{{ __('Email') }}</th>
+                                        <th>{{ __('Status') }}</th>
+                                        <th class="text-center">{{ __('Operation') }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -577,7 +577,7 @@
                         @if ($customers->count() > 5)
                             <div class="card-footer text-center">
                                 <a href="javascript:void(0)" class="text-warning" onclick="showAllCustomers()">
-                                    <i class="fas fa-arrow-down me-1"></i>{{ __('Language.All Customers') }}
+                                    <i class="fas fa-arrow-down me-1"></i>{{ __('All Customers') }}
                                     ({{ $customers->count() }})
                                 </a>
                             </div>
@@ -591,12 +591,12 @@
                 <div class="card shadow">
                     <div class="card-header py-3 d-flex justify-content-between align-items-center">
                         <h6 class="m-0 font-weight-bold text-info">
-                            <i class="fas fa-shopping-cart me-2"></i>{{ __('Language.Orders') }}
+                            <i class="fas fa-shopping-cart me-2"></i>{{ __('Orders') }}
                             <span class="badge bg-info ms-2">{{ $orders->count() }}</span>
                         </h6>
                         <div>
                             <a href="{{ route('order.create') }}" class="btn btn-sm btn-info text-white">
-                                <i class="fas fa-plus"></i> {{ __('Language.New') }}
+                                <i class="fas fa-plus"></i> {{ __('New') }}
                             </a>
                         </div>
                     </div>
@@ -606,12 +606,12 @@
                                 <thead class="bg-light">
                                     <tr>
                                         <th>#</th>
-                                        <th>{{ __('Language.Title') }}</th>
-                                        <th>{{ __('Language.Description') }}</th>
-                                        <th>{{ __('Language.Price') }}</th>
-                                        <th>{{ __('Language.Quantity') }}</th>
-                                        <th>{{ __('Language.Customer_id') }}</th>
-                                        <th class="text-center">{{ __('Language.Operation') }}</th>
+                                        <th>{{ __('Title') }}</th>
+                                        <th>{{ __('Description') }}</th>
+                                        <th>{{ __('Price') }}</th>
+                                        <th>{{ __('Quantity') }}</th>
+                                        <th>{{ __('Customer_id') }}</th>
+                                        <th class="text-center">{{ __('Operation') }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -658,7 +658,7 @@
                         @if ($orders->count() > 5)
                             <div class="card-footer text-center">
                                 <a href="javascript:void(0)" class="text-info" onclick="showAllOrders()">
-                                    <i class="fas fa-arrow-down me-1"></i>{{ __('Language.All Orders') }}
+                                    <i class="fas fa-arrow-down me-1"></i>{{ __('All Orders') }}
                                     ({{ $orders->count() }})
                                 </a>
                             </div>
@@ -672,12 +672,12 @@
                 <div class="card shadow">
                     <div class="card-header py-3 d-flex justify-content-between align-items-center">
                         <h6 class="m-0 font-weight-bold text-danger">
-                            <i class="fas fa-briefcase me-2"></i>{{ __('Language.Employees') }}
+                            <i class="fas fa-briefcase me-2"></i>{{ __('Employees') }}
                             <span class="badge bg-danger ms-2">{{ $employees->count() }}</span>
                         </h6>
                         <div>
                             <a href="{{ route('employee.create') }}" class="btn btn-sm btn-danger">
-                                <i class="fas fa-plus"></i> {{ __('Language.New') }}
+                                <i class="fas fa-plus"></i> {{ __('New') }}
                             </a>
                         </div>
                     </div>
@@ -687,10 +687,10 @@
                                 <thead class="bg-light">
                                     <tr>
                                         <th>#</th>
-                                        <th>{{ __('Language.Name') }}</th>
-                                        <th>{{ __('Language.Email') }}</th>
-                                        <th>{{ __('Language.Salary') }}</th>
-                                        <th class="text-center">{{ __('Language.Operation') }}</th>
+                                        <th>{{ __('Name') }}</th>
+                                        <th>{{ __('Email') }}</th>
+                                        <th>{{ __('Salary') }}</th>
+                                        <th class="text-center">{{ __('Operation') }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -731,7 +731,7 @@
                         @if ($employees->count() > 5)
                             <div class="card-footer text-center">
                                 <a href="javascript:void(0)" class="text-danger" onclick="showAllEmployees()">
-                                    <i class="fas fa-arrow-down me-1"></i>{{ __('Language.All Employees') }}
+                                    <i class="fas fa-arrow-down me-1"></i>{{ __('All Employees') }}
                                     ({{ $employees->count() }})
                                 </a>
                             </div>
@@ -745,12 +745,12 @@
                 <div class="card shadow">
                     <div class="card-header py-3 d-flex justify-content-between align-items-center">
                         <h6 class="m-0 font-weight-bold text-dark">
-                            <i class="fas fa-chart-line me-2"></i>{{ __('Language.Sales') }}
+                            <i class="fas fa-chart-line me-2"></i>{{ __('Sales') }}
                             <span class="badge bg-dark ms-2">{{ $sales->count() }}</span>
                         </h6>
                         <div>
                             <a href="{{ route('sale.create') }}" class="btn btn-sm btn-dark">
-                                <i class="fas fa-plus"></i> {{ __('Language.New') }}
+                                <i class="fas fa-plus"></i> {{ __('New') }}
                             </a>
                         </div>
                     </div>
@@ -760,12 +760,12 @@
                                 <thead class="bg-light">
                                     <tr>
                                         <th>#</th>
-                                        <th>{{ __('Language.Title') }}</th>
-                                        <th>{{ __('Language.Description') }}</th>
-                                        <th>{{ __('Language.Price') }}</th>
-                                        <th>{{ __('Language.Quantity') }}</th>
-                                        <th>{{ __('Language.Employee_id') }}</th>
-                                        <th class="text-center">{{ __('Language.Operation') }}</th>
+                                        <th>{{ __('Title') }}</th>
+                                        <th>{{ __('Description') }}</th>
+                                        <th>{{ __('Price') }}</th>
+                                        <th>{{ __('Quantity') }}</th>
+                                        <th>{{ __('Employee_id') }}</th>
+                                        <th class="text-center">{{ __('Operation') }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -812,7 +812,7 @@
                         @if ($sales->count() > 5)
                             <div class="card-footer text-center">
                                 <a href="javascript:void(0)" class="text-dark" onclick="showAllSales()">
-                                    <i class="fas fa-arrow-down me-1"></i>{{ __('Language.All Sales') }}
+                                    <i class="fas fa-arrow-down me-1"></i>{{ __('All Sales') }}
                                     ({{ $sales->count() }})
                                 </a>
                             </div>
@@ -832,12 +832,12 @@
                 <div class="card shadow">
                     <div class="card-header py-3 d-flex justify-content-between align-items-center">
                         <h6 class="m-0 font-weight-bold text-dark">
-                            <i class="fas fa-chart-line me-2"></i>{{ __('Language.Reservations') }}
+                            <i class="fas fa-chart-line me-2"></i>{{ __('Reservations') }}
                             <span class="badge bg-dark ms-2">{{ $reservations->count() }}</span>
                         </h6>
                         <div>
                             <a href="#" class="btn btn-sm btn-dark">
-                                <i class="fas fa-plus"></i> {{ __('Language.New') }}
+                                <i class="fas fa-plus"></i> {{ __('New') }}
                             </a>
                         </div>
                     </div>
@@ -847,13 +847,13 @@
                                 <thead class="bg-light">
                                     <tr>
                                         <th>#</th>
-                                        <th>{{ __('Language.Name') }}</th>
-                                        <th>{{ __('Language.Email') }}</th>
-                                        <th>{{ __('Language.Subject') }}</th>
-                                        <th>{{ __('Language.Message') }}</th>
-                                        <th>{{ __('Language.Status') }}</th>
-                                        <th>{{ __('Language.Action') }}</th>
-                                        <th class="text-center">{{ __('Language.Operation') }}</th>
+                                        <th>{{ __('Name') }}</th>
+                                        <th>{{ __('Email') }}</th>
+                                        <th>{{ __('Subject') }}</th>
+                                        <th>{{ __('Message') }}</th>
+                                        <th>{{ __('Status') }}</th>
+                                        <th>{{ __('Action') }}</th>
+                                        <th class="text-center">{{ __('Operation') }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -922,7 +922,7 @@
                             <div class="card-footer text-center">
                                 <a href="{{ route('reservations.index') }}" class="text-dark"
                                     onclick="showAllReservations()">
-                                    <i class="fas fa-arrow-down me-1"></i>{{ __('Language.All Reservations') }}
+                                    <i class="fas fa-arrow-down me-1"></i>{{ __('All Reservations') }}
                                     ({{ $reservations->count() }})
                                 </a>
                             </div>
