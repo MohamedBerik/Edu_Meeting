@@ -863,7 +863,7 @@
                                             <td>{{ Str::limit($item->name, 20) }}</td>
                                             <td>{{ Str::limit($item->email, 30) }}</td>
                                             <td>
-                                                <span class="fw-bold text-dark">{{ $item->subject }} $</span>
+                                                <span class="fw-bold text-dark">{{ $item->subject }}</span>
                                             </td>
                                             <td>{{ $item->message }}</td>
                                             <td>
