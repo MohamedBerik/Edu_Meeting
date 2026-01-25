@@ -849,9 +849,7 @@
                                         <th>#</th>
                                         <th>{{ __('Language.Name') }}</th>
                                         <th>{{ __('Language.Email') }}</th>
-                                        <th>{{ __('Language.Persons') }}</th>
-                                        <th>{{ __('Language.Date') }}</th>
-                                        <th>{{ __('Language.Time') }}</th>
+                                        <th>{{ __('Language.Subject') }}</th>
                                         <th>{{ __('Language.Message') }}</th>
                                         <th>{{ __('Language.Status') }}</th>
                                         <th>{{ __('Language.Action') }}</th>
@@ -865,13 +863,7 @@
                                             <td>{{ Str::limit($item->name, 20) }}</td>
                                             <td>{{ Str::limit($item->email, 30) }}</td>
                                             <td>
-                                                <span class="fw-bold text-dark">{{ $item->persons }} $</span>
-                                            </td>
-                                            <td>
-                                                <span class="badge bg-primary">{{ $item->date }}</span>
-                                            </td>
-                                            <td>
-                                                <span class="badge bg-secondary">{{ $item->time }}</span>
+                                                <span class="fw-bold text-dark">{{ $item->subject }} $</span>
                                             </td>
                                             <td>{{ $item->message }}</td>
                                             <td>

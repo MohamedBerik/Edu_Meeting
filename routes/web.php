@@ -37,7 +37,13 @@ Route::group(
 
         Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+        // Reservations Routes
         Route::post('/reservations', [ReservationController::class, 'store'])->name('reservations.store');
+        Route::get('/reservations', [ReservationController::class, 'index'])->name('reservations.index');
+        Route::post('/reservations/{id}/confirm', [ReservationController::class, 'confirm'])->name('reservations.confirm');
+        Route::post('/reservations/{id}/cancel', [ReservationController::class, 'cancel'])->name('reservations.cancel');
+        Route::delete('/reservations/{id}', [ReservationController::class, 'destroy'])->name('reservations.delete');
+
 
         Route::middleware("CheckAdmin")->group(function () {
             Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -117,19 +123,6 @@ Route::group(
                 Route::post('/update', 'update')->name('update');
                 Route::delete('/delete/{id}', 'delete')->name('delete');
             });
-
-            // Reservations Routes
-            Route::get('/reservations', [ReservationController::class, 'index'])
-                ->name('reservations.index');
-
-            Route::post('/reservations/{id}/confirm', [ReservationController::class, 'confirm'])
-                ->name('reservations.confirm');
-
-            Route::post('/reservations/{id}/cancel', [ReservationController::class, 'cancel'])
-                ->name('reservations.cancel');
-
-            Route::delete('/reservations/{id}', [ReservationController::class, 'destroy'])
-                ->name('reservations.delete');
         });
     }
 );
