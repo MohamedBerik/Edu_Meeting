@@ -117,7 +117,7 @@
             <div class="row">
                 <div class="col-lg-9 align-self-center">
                     <h2>Let's get in touch</h2>
-                    <form id="contact" action="{{ route('contact.submit') }}" method="POST">
+                    <form id="contact" action="{{ route('reservations.store') }}" method="POST">
                         @csrf
                         <div class="row">
                             <div class="col-lg-12">

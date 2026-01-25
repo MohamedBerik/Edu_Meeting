@@ -20,7 +20,6 @@ class ReservationController extends Controller
 
     public function store(Request $request)
     {
-        // التحقق من البيانات
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
@@ -32,7 +31,6 @@ class ReservationController extends Controller
             return back()->withErrors($validator)->withInput();
         }
 
-        // حفظ في قاعدة البيانات
         Reservation::create([
             'name' => $request->name,
             'email' => $request->email,

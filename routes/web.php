@@ -12,7 +12,6 @@ use App\Http\Controllers\ReservationController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-use App\Http\Controllers\ContactController;
 
 Route::group(
     [
@@ -38,8 +37,7 @@ Route::group(
 
         Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-        Route::post('/contact-submit', [ContactController::class, 'submit'])
-            ->name('contact.submit');
+        Route::post('/reservations.store', [ReservationController::class, 'store'])->name('reservations.store');
 
         Route::middleware("CheckAdmin")->group(function () {
             Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
