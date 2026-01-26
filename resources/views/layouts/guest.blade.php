@@ -59,7 +59,7 @@
 
                             <li class="navbar-nav ms-auto">
                                 <div class="dropdown">
-                                    <button class="btn text-white dropdown-toggle" type="button"
+                                    <button class="btn text-primary dropdown-toggle" type="button"
                                         id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                         🌐 {{ __('language.Language') }}
                                     </button>
@@ -111,12 +111,10 @@
                                 </li>
                             @endguest
                             </li>
-
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
-                        <!-- ***** Menu End ***** -->
                     </nav>
                 </div>
             </div>
