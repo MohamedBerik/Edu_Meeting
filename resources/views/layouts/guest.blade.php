@@ -211,7 +211,7 @@
         });
     </script>
 
-    {{-- <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             const menuTrigger = document.querySelector(".menu-trigger");
             const navMenu = document.querySelector(".main-nav .nav");
@@ -223,7 +223,7 @@
                 });
             }
         });
-    </script> --}}
+    </script>
 
     <style>
         /* Mobile menu */
