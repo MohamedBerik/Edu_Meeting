@@ -1,4 +1,5 @@
 @extends('layouts.guest')
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 @section('content')
     <!-- ***** Main Banner Area Start ***** -->
@@ -12,7 +13,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="caption">
-                            <h6>Hello Students</h6>
+                            <h6>{{ __('language.Hello Students') }}</h6>
                             <h2>Welcome to Education</h2>
                             <p>This is an edu meeting HTML CSS template provided by
                                 <a rel="nofollow" href="https://templatemo.com/page/1" target="_blank">TemplateMo

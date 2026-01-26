@@ -53,5 +53,15 @@ return [
     "All Reservations" => "جميع الحجوزات",
     "Action" => "التأكيد",
     "Create Reservation" => "انشيء حجز",
-    "Subject" => "الموضوع"
+    "Subject" => "الموضوع",
+    "Home" => "الرئيسية",
+    "Meetings" => "اللقاءات",
+    "Apply Now" => "سجل الان",
+    "Upcoming Meetings" => "اللقاءات القادمة",
+    "Meeting Details" => "تفاصيل اللقاءات",
+    "Courses" => "الكورسات",
+    "Login" => "تسجيل الدخول",
+    "Register" => "تسجيل جديد",
+    "Logout" => "تسجيل خروج",
+    "Hello Students" => "اهلا بجميع الطلاب"
 ];
