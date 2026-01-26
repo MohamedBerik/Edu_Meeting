@@ -58,23 +58,7 @@
                             </li>
                             <li class="scroll-to-section"><a href="#courses">Courses</a></li>
                             <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
-                            <li class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    {{ __('language.Language') }}
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                                        <li>
-                                            <a class="dropdown-item" rel="alternate" hreflang="{{ $localeCode }}"
-                                                href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                                                {{ $properties['native'] }}
-                                            </a>
-                                        </li>
-                                    @endforeach
 
-                                </ul>
-                            </li>
                             @if (Route::has('login'))
                                 @auth
                                     <li style="margin-top: -10px;">
