@@ -58,7 +58,7 @@
                             </li>
                             <li class="scroll-to-section"><a href="#courses">Courses</a></li>
                             <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
-                            <div class="dropdown">
+                            <li class="dropdown">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     {{ __('language.Language') }}
@@ -74,7 +74,7 @@
                                     @endforeach
 
                                 </ul>
-                            </div>
+                            </li>
                             @if (Route::has('login'))
                                 @auth
                                     <li style="margin-top: -10px;">
