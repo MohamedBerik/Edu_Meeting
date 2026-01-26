@@ -48,7 +48,7 @@
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="{{ route('welcome') }}" class="active">Home</a></li>
                             <li><a href="{{ route('meetings') }}">Meetings</a></li>
-                            <li class="scroll-to-section"><a href="#apply">Apply Now</a></li>
+                            <li class="scroll-to-section"><a href="#contact">Apply Now</a></li>
                             <li class="has-sub">
                                 <a href="javascript:void(0)">Pages</a>
                                 <ul class="sub-menu">
