@@ -201,20 +201,6 @@
             }
         });
     </script>
-    <style>
-        /* Mobile menu */
-        @media (max-width: 991px) {
-            .main-nav .nav {
-                display: none;
-                flex-direction: column;
-                background: #fff;
-            }
-
-            .main-nav .nav.active {
-                display: block;
-            }
-        }
-    </style>
 
 </body>
 
