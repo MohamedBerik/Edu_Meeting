@@ -66,5 +66,5 @@ return [
     "Logout" => "تسجيل خروج",
     "Hello Students" => "اهلا بجميع الطلاب",
     "Welcome to Education" => "مرحبا بكم في عالم من التعلم",
-    "Join Us Now" => "اشترك الان"
+    "Join Us Now!" => "اشترك الان"
 ];

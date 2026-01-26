@@ -66,5 +66,5 @@ return [
     "Logout" => "Logout",
     "Hello Students" => "Hello Students",
     "Welcome to Education" => "Welcome to Education",
-    "Join Us Now" => "Join Us Now"
+    "Join Us Now!" => "Join Us Now!"
 ];
