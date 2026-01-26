@@ -128,9 +128,9 @@
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
-    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+    {{-- <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script> --}}
 
-    <script>
+    {{-- <script>
         $(document).ready(function() {
             $('.nav li.has-sub > a').on('click', function(e) {
                 if ($(window).width() < 992) {
@@ -150,7 +150,8 @@
         .nav li.open>.sub-menu {
             display: block;
         }
-    </style>
+    </style> --}}
+
     {{-- <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script> --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
@@ -161,7 +162,7 @@
     <script src="{{ asset('assets/js/tabs.js') }}"></script>
     <script src="{{ asset('assets/js/video.js') }}"></script>
     <script src="{{ asset('assets/js/slick-slider.js') }}"></script>
-    <script src="{{ asset('assets/js/custom.js') }}"></script>
+    {{-- <script src="{{ asset('assets/js/custom.js') }}"></script> --}}
 
     <script>
         //according to loftblog tut
@@ -224,7 +225,6 @@
             }
         });
     </script>
-
     <style>
         /* Mobile menu */
         @media (max-width: 991px) {
@@ -239,6 +239,31 @@
             }
         }
     </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.has-sub > a').on('click', function(e) {
+                e.preventDefault();
+
+                let parent = $(this).parent('.has-sub');
+                let submenu = parent.find('.sub-menu');
+
+                if (submenu.is(':visible')) {
+                    submenu.slideUp(300);
+                    parent.removeClass('is-open');
+                } else {
+                    $('.has-sub .sub-menu').slideUp(300);
+                    $('.has-sub').removeClass('is-open');
+
+                    submenu.slideDown(300);
+                    parent.addClass('is-open');
+                }
+            });
+
+        });
+    </script>
 
 </body>
 
