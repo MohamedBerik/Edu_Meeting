@@ -39,48 +39,78 @@
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="{{ route('welcome') }}" class="logo">
-                            Edu Meeting
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
+                        <a href="{{ route('welcome') }}" class="logo">Edu Meeting</a>
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="{{ route('welcome') }}" class="active">Home</a></li>
-                            <li><a href="{{ route('meetings') }}">Meetings</a></li>
-                            <li class="scroll-to-section"><a href="#contact">Apply Now</a></li>
+                            <li class="scroll-to-section"><a href="{{ route('welcome') }}"
+                                    class="active">{{ __('language.Home') }}</a></li>
+                            <li><a href="{{ route('meetings') }}">{{ __('language.Meetings') }}</a></li>
+                            <li class="scroll-to-section"><a href="#contact">{{ __('language.Apply Now') }}</a></li>
                             <li class="has-sub">
                                 <a href="javascript:void(0)">Pages</a>
                                 <ul class="sub-menu">
-                                    <li><a href="{{ route('meetings') }}">Upcoming Meetings</a></li>
-                                    <li><a href="{{ route('meeting-details') }}">Meeting Details</a></li>
+                                    <li><a href="{{ route('meetings') }}">{{ __('language.Upcoming Meetings') }}</a>
+                                    </li>
+                                    <li><a
+                                            href="{{ route('meeting-details') }}">{{ __('language.Meeting Details') }}</a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li class="scroll-to-section"><a href="#courses">Courses</a></li>
-                            <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
-                            @if (Route::has('login'))
-                                @auth
-                                    <li style="margin-top: -10px;">
-                                        <form method="POST" action="{{ route('logout') }}">
+                            <li class="scroll-to-section"><a href="#courses">{{ __('language.Courses') }}</a></li>
+
+                            <li class="navbar-nav ms-auto">
+                                <div class="dropdown">
+                                    <button class="btn text-white dropdown-toggle" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        🌐 {{ __('language.Language') }}
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                            <li>
+                                                <a class="dropdown-item" rel="alternate" hreflang="{{ $localeCode }}"
+                                                    href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                                    {{ $properties['native'] }}
+                                                </a>
+                                            </li>
+                                        @endforeach
+
+                                    </ul>
+                                </div>
+
+                                <!-- Authentication Links -->
+                                @guest
+                                    @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a href="{{ route('login') }}">{{ __('language.Login') }}</a>
+                                </li>
+                                @endif
+
+                                @if (Route::has('register'))
+                                    <li class="nav-item">
+                                        <a href="{{ route('register') }}">{{ __('language.Register') }}</a>
+                                    </li>
+                                @endif
+                            @else
+                                <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        {{ Auth::user()->name }}
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                                     document.getElementById('logout-form').submit();">
+                                            {{ __('language.Logout') }}
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            class="d-none">
                                             @csrf
-                                            <button type="submit" class="btn btn-outline-danger" style="margin-top: 10px;">
-                                                Logout
-                                            </button>
                                         </form>
-                                    </li>
-                                @else
-                                    <li style="margin-top: -2px">
-                                        <a class="btn btn-success" style="padding-top: 3px" href="{{ route('login') }}">Log
-                                            in</a>
-                                    </li>
-                                    @if (Route::has('register'))
-                                        <li style="margin-top: -2px">
-                                            <a class="btn btn-success" style="padding-top: 3px"
-                                                href="{{ route('register') }}">Register</a>
-                                        </li>
-                                    @endif
-                                @endauth
-                            @endif
+                                    </div>
+                                </li>
+                            @endguest
+                            </li>
 
                         </ul>
                         <a class='menu-trigger'>
@@ -107,8 +137,10 @@
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-
+    {{-- <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
     <script src="{{ asset('assets/js/isotope.min.js') }}"></script>
     <script src="{{ asset('assets/js/owl-carousel.js') }}"></script>
     <script src="{{ asset('assets/js/lightbox.js') }}"></script>
