@@ -56,32 +56,27 @@
                                 </ul>
                             </li>
                             <li class="scroll-to-section"><a href="#courses">{{ __('language.Courses') }}</a></li>
-
-                            <li class="navbar-nav ms-auto">
-                                <div class="dropdown">
-                                    <button class="btn text-primary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        🌐 {{ __('language.Language') }}
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                                            <li>
-                                                <a class="dropdown-item" rel="alternate" hreflang="{{ $localeCode }}"
-                                                    href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                                                    {{ $properties['native'] }}
-                                                </a>
-                                            </li>
-                                        @endforeach
-
-                                    </ul>
-                                </div>
-
-                                <!-- Authentication Links -->
-                                @guest
-                                    @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a href="{{ route('login') }}">{{ __('language.Login') }}</a>
-                                </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    🌐 {{ __('language.Language') }}
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                        <li>
+                                            <a class="dropdown-item" rel="alternate" hreflang="{{ $localeCode }}"
+                                                href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                                {{ $properties['native'] }}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                            <!-- Authentication Links -->
+                            @guest
+                                @if (Route::has('login'))
+                                    <li class="nav-item">
+                                        <a href="{{ route('login') }}">{{ __('language.Login') }}</a>
+                                    </li>
                                 @endif
 
                                 @if (Route::has('register'))
@@ -110,7 +105,6 @@
                                     </div>
                                 </li>
                             @endguest
-                            </li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
