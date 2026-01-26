@@ -141,6 +141,7 @@
             });
         });
     </script>
+
     <style>
         .nav .sub-menu {
             display: none;
@@ -161,6 +162,7 @@
     <script src="{{ asset('assets/js/video.js') }}"></script>
     <script src="{{ asset('assets/js/slick-slider.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
+
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
@@ -209,7 +211,7 @@
         });
     </script>
 
-    <script>
+    {{-- <script>
         document.addEventListener("DOMContentLoaded", function() {
             const menuTrigger = document.querySelector(".menu-trigger");
             const navMenu = document.querySelector(".main-nav .nav");
@@ -221,7 +223,8 @@
                 });
             }
         });
-    </script>
+    </script> --}}
+
     <style>
         /* Mobile menu */
         @media (max-width: 991px) {
