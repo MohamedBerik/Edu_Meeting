@@ -187,6 +187,21 @@
             checkSection();
         });
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuTrigger = document.querySelector(".menu-trigger");
+            const navMenu = document.querySelector(".main-nav .nav");
+
+            if (menuTrigger && navMenu) {
+                menuTrigger.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    navMenu.classList.toggle("active");
+                });
+            }
+        });
+    </script>
+
 </body>
 
 </html>
