@@ -45,10 +45,12 @@
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
+                        <ul class="nav align-items-center">
+
                             <li class="scroll-to-section"><a href="{{ route('welcome') }}" class="active">Home</a></li>
                             <li><a href="{{ route('meetings') }}">Meetings</a></li>
                             <li class="scroll-to-section"><a href="#apply">Apply Now</a></li>
+
                             <li class="has-sub">
                                 <a href="javascript:void(0)">Pages</a>
                                 <ul class="sub-menu">
@@ -56,34 +58,58 @@
                                     <li><a href="{{ route('meeting-details') }}">Meeting Details</a></li>
                                 </ul>
                             </li>
+
                             <li class="scroll-to-section"><a href="#courses">Courses</a></li>
                             <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
 
+                            {{-- 🔽 Language Dropdown --}}
+                            <li class="dropdown ms-3">
+                                <a class="btn btn-outline-light btn-sm dropdown-toggle" href="#"
+                                    id="languageDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    🌐 {{ __('Language') }}
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-end shadow">
+                                    @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                        <li>
+                                            <a class="dropdown-item d-flex align-items-center" rel="alternate"
+                                                hreflang="{{ $localeCode }}"
+                                                href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                                <span class="me-2">🌍</span>
+                                                {{ $properties['native'] }}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </li>
+
+                            {{-- 🔐 Auth Buttons --}}
                             @if (Route::has('login'))
                                 @auth
-                                    <li style="margin-top: -10px;">
+                                    <li class="ms-2">
                                         <form method="POST" action="{{ route('logout') }}">
                                             @csrf
-                                            <button type="submit" class="btn btn-outline-danger" style="margin-top: 10px;">
+                                            <button type="submit" class="btn btn-outline-danger btn-sm">
                                                 Logout
                                             </button>
                                         </form>
                                     </li>
                                 @else
-                                    <li style="margin-top: -2px">
-                                        <a class="btn btn-success" style="padding-top: 3px" href="{{ route('login') }}">Log
-                                            in</a>
+                                    <li class="ms-2">
+                                        <a class="btn btn-success btn-sm" href="{{ route('login') }}">Log in</a>
                                     </li>
+
                                     @if (Route::has('register'))
-                                        <li style="margin-top: -2px">
-                                            <a class="btn btn-success" style="padding-top: 3px"
-                                                href="{{ route('register') }}">Register</a>
+                                        <li class="ms-2">
+                                            <a class="btn btn-success btn-sm" href="{{ route('register') }}">Register</a>
                                         </li>
                                     @endif
                                 @endauth
                             @endif
 
                         </ul>
+
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
