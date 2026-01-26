@@ -57,11 +57,14 @@ return [
     "Home" => "Home",
     "Meetings" => "Meetings",
     "Apply Now" => "Apply Now",
+    "Pages" => "Pages",
     "Upcoming Meetings" => "Upcoming Meetings",
     "Meeting Details" => "Meeting Details",
     "Courses" => "Courses",
     "Login" => "Login",
     "Register" => "Register",
     "Logout" => "Logout",
-    "Hello Students" => "Hello Students"
+    "Hello Students" => "Hello Students",
+    "Welcome to Education" => "Welcome to Education",
+    "Join Us Now" => "Join Us Now"
 ];

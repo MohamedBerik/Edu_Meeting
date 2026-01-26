@@ -14,7 +14,7 @@
                     <div class="col-lg-12">
                         <div class="caption">
                             <h6>{{ __('language.Hello Students') }}</h6>
-                            <h2>Welcome to Education</h2>
+                            <h2>{{ __('language.Welcome to Education') }}</h2>
                             <p>This is an edu meeting HTML CSS template provided by
                                 <a rel="nofollow" href="https://templatemo.com/page/1" target="_blank">TemplateMo
                                     website</a>.
@@ -24,7 +24,7 @@
                             </p>
                             <div class="main-button-red">
                                 <div class="scroll-to-section">
-                                    <a href="#contact">Join Us Now!</a>
+                                    <a href="#contact">{{ __('language.Join Us Now!') }}</a>
                                 </div>
                             </div>
                         </div>

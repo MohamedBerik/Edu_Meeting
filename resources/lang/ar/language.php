@@ -57,11 +57,14 @@ return [
     "Home" => "الرئيسية",
     "Meetings" => "اللقاءات",
     "Apply Now" => "سجل الان",
+    "Pages" => "الصفحات",
     "Upcoming Meetings" => "اللقاءات القادمة",
     "Meeting Details" => "تفاصيل اللقاءات",
     "Courses" => "الكورسات",
     "Login" => "تسجيل الدخول",
     "Register" => "تسجيل جديد",
     "Logout" => "تسجيل خروج",
-    "Hello Students" => "اهلا بجميع الطلاب"
+    "Hello Students" => "اهلا بجميع الطلاب",
+    "Welcome to Education" => "مرحبا بكم في عالم من التعلم",
+    "Join Us Now" => "اشترك الان"
 ];

@@ -46,7 +46,7 @@
                             <li><a href="{{ route('meetings') }}">{{ __('language.Meetings') }}</a></li>
                             <li class="scroll-to-section"><a href="#contact">{{ __('language.Apply Now') }}</a></li>
                             <li class="has-sub">
-                                <a href="javascript:void(0)">Pages</a>
+                                <a href="javascript:void(0)">{{ __('language.Pages') }}</a>
                                 <ul class="sub-menu">
                                     <li><a href="{{ route('meetings') }}">{{ __('language.Upcoming Meetings') }}</a>
                                     </li>
