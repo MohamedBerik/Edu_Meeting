@@ -67,7 +67,7 @@
                                 <a class="btn btn-outline-light btn-sm dropdown-toggle" href="#"
                                     id="languageDropdown" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    🌐 {{ __('Language') }}
+                                    🌐 {{ __('language.Language') }}
                                 </a>
 
                                 <ul class="dropdown-menu dropdown-menu-end shadow">
