@@ -44,13 +44,8 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-
-
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
-
                         <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -68,8 +63,6 @@
 
                             </ul>
                         </div>
-
-
 
                         <!-- Authentication Links -->
                         @guest
